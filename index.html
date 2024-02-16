@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Camera App</title>
+</head>
+<body>
+    <div id="camera-container" class="camera-container">
+        <video id="video" class="video" autoplay></video>
+        <audio id="audio" controls style="display: none;"></audio>
+    </div>
+    <div class="btn">
+        <button id="capture-btn" class="capture-btn" onclick="capturePhoto()">Photo</button>
+        <button id="record-btn" class="record-btn" onclick="toggleRecording()">video</button>
+        <p id="record-time" class="record-time"> 00:00</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
